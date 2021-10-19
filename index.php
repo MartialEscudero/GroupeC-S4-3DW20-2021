@@ -32,7 +32,7 @@
 
 	echo $template_index->render(array(
 		'_journees_meteo'	=> $_journees_meteo,
-		'_ville'			= $_ville,
+		'_ville'			=>$_ville,
 		'n_jours_previsions'=> $n_jours_previsions
 	));
 
