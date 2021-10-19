@@ -42,13 +42,16 @@
 		
 
 		$_icones_meteo =array(
-'01d' => 'entypo-light-up',
-'02d' => 'entypo-light-up','03d' => 'entypo-cloud'
-'04d' => 'entypo-cloud','09d' => 'entypo-water', 
-'10d' => 'entypo-water',
-'11d' => 'entypo-flash',
-'13d' => 'entypo-star', 
-'50d' => 'entypo-air');
+			'01d' => 'entypo-light-up',
+			'02d' => 'entypo-light-up',
+			'03d' => 'entypo-cloud',
+			'04d' => 'entypo-cloud',
+			'09d' => 'entypo-water', 
+			'10d' => 'entypo-water',
+			'11d' => 'entypo-flash',
+			'13d' => 'entypo-star', 
+			'50d' => 'entypo-air'
+		);
 
 		if(array_key_exists($code, $_icones_meteo))
 			return $_icones_meteo[$code];
