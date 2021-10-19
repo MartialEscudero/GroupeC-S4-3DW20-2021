@@ -67,4 +67,4 @@
 
 	</section>
 </div>
-{{ incle('bottom.tpl') }}
+{{ include('bottom.tpl') }}
