@@ -3,8 +3,9 @@
 	// il manquait le "e" à include qui permet d'exécuter un fichier php
 	include 'inc.twig.php';
 
-	$template_index = $twig->loadTemplate('index.tpl')
+	$template_index = $twig->loadTemplate('index.tpl');
 
+	// le problème ne venait pas de variable, il manquait un point-virgule sur la ligne précédente ce qui empêchait l'exécution correcte de la suite du code
 	$n_jours_previsions = 3;
 
 	$ville = "Limoges"; 
