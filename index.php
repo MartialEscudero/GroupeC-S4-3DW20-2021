@@ -54,3 +54,6 @@
 			return 'entypo-help';
 		}
 	}
+
+// ajout de la balise fermante php
+?>
