@@ -1,6 +1,7 @@
 <?php
 
-	includ 'inc.twig.php';
+	// il manquait le "e" à include qui permet d'exécuter un fichier php
+	include 'inc.twig.php';
 
 	$template_index = $twig->loadTemplate('index.tpl')
 
