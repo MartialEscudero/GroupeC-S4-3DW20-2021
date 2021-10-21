@@ -32,7 +32,7 @@
 	    		Voir sur une carte
 	    	</a>
 	    </h1>
-	    {% for journee in _journees_meteo 
+	    {% for journee in _journees_meteo %}
 	    	<div class="jour">
 	    		<div class="numero_jour">
 	    			<h2>Météo du {{journee.dt|date('d/m/Y')}}</h2>
