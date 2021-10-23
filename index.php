@@ -1,13 +1,15 @@
 <?php
 
-	// il manquait le "e" à include qui permet d'exécuter un fichier php
+	// exécute un fichier php ici inc.twig.php'
 	include 'inc.twig.php';
 
+	// ajoute le template twig
 	$template_index = $twig->loadTemplate('index.tpl');
 
-	// le problème ne venait pas de variable, il manquait un point-virgule sur la ligne précédente ce qui empêchait l'exécution correcte de la suite du code
+	// créé une variable "nombre de jours en prévison" qui contient le chiffre "3"
 	$n_jours_previsions = 3;
 
+	// créé une variable "ville" qui contient la chaine de caractères "Limoges"
 	$ville = "Limoges"; 
 
 	//~ Clé API
@@ -15,6 +17,7 @@
 	//~ votre propre compte ici : https://home.openweathermap.org/users/sign_up
 	$apikey = "10eb2d60d4f267c79acb4814e95bc7dc";
 
+	// créé une variable "url data" qui contient le lien vers l'api openweathermap pour récupérer les données de manière dynamique
 	$data_url = 'http://api.openweathermap.org/data/2.5/forecast/daily?APPID='.$apikey.'&q='.$ville.',fr&lang=fr&units=metric&cnt='.$n_jours_previsions;
 
 	$data_contenu = file_get_contents($data_url);
