@@ -26,7 +26,9 @@
 	//Récupère la chaîne encodée JSON et la convertit en une variable PHP
 	$_data_array = json_decode($data_contenu, true);
 
+	// déclaration d'un tableau "$_ville" composé des éléments du tableau $_data_array['city']
 	$_ville = $_data_array['city'];
+	// déclaration d'un tableau "$_journees_meteo" composé des éléments du tableau $_data_array['list']
 	$_journees_meteo = $_data_array['list'];
 
 	for ($i = 0; $i < count($_journees_meteo); $i++) {
