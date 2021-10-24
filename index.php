@@ -20,8 +20,10 @@
 	// créé une variable "url data" qui contient le lien vers l'api openweathermap pour récupérer les données de manière dynamique
 	$data_url = 'http://api.openweathermap.org/data/2.5/forecast/daily?APPID='.$apikey.'&q='.$ville.',fr&lang=fr&units=metric&cnt='.$n_jours_previsions;
 
+	// Lit en chaine de caractères le contenu de la variable $data_url
 	$data_contenu = file_get_contents($data_url);
-		
+	
+	//Récupère la chaîne encodée JSON et la convertit en une variable PHP
 	$_data_array = json_decode($data_contenu, true);
 
 	$_ville = $_data_array['city'];
