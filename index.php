@@ -39,11 +39,12 @@
 		'n_jours_previsions'=> $n_jours_previsions
 	));
 
+	//récuperer dans le tableau la valeur de l'icone correspondant et la retourner
 	function getMeteoImage($code){
 		if(strpos($code, 'n'))
 			return 'entypo-moon';
 		
-
+	//Tableau stockant les différentes valeur des icones 
 		$_icones_meteo =array(
 			'01d' => 'entypo-light-up',
 			'02d' => 'entypo-light-up',
